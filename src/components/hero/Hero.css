@@ -1,0 +1,39 @@
+.bg {
+  background-image: url("../../images/hero3.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.divm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  margin-left: 400px;
+}
+
+.hello {
+  font-family: "Arial, sans-serif";
+  font-size: "8rem";
+  font-weight: 900;
+  color: black;
+  letter-spacing: "-0.05em";
+  text-shadow: "2px 2px 4px #000000";
+}
+
+.hero-welcome {
+  font-size: 2rem;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+}
