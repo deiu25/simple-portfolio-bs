@@ -1,15 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useSpring, animated, config } from "react-spring";
 import "./Hero.css";
 import Button from "react-bootstrap/Button";
 
 export const Hero = () => {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    setVisible(true);
-  }, []);
-
   const welcomeProps = useSpring({
     from: { transform: "translate3d(0,-40px,0)", opacity: 0 },
     to: { transform: "translate3d(0,0,0)", opacity: 1 },
@@ -20,10 +14,10 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className="d-flex min-vh-100 flex-column justify-content-center align-items-center bg"
+      className="d-flex flex-column justify-content-center align-items-center bg smalldevices"
     >
       <animated.h1
-        className="fw-bolder display-1 mb-3"
+        className="fw-bolder display-1 mb-3 hello"
         style={{ textShadow: "2px 2px 4px #000000", ...welcomeProps }}
       >
         HEY, I`M ANDREI
@@ -34,7 +28,11 @@ export const Hero = () => {
       >
         I'm a front-end web developer
       </h6>
-      <Button href="#about" variant="danger" className="rounded-pill">
+      <Button
+        href="#about"
+        variant="danger"
+        className="rounded-pill d-none d-md-inline-block"
+      >
         About Me
       </Button>
     </section>

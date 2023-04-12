@@ -1,0 +1,38 @@
+.portfolio-section-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.porfolio-section-subtitle {
+  font-size: 1.5rem;
+  color: #34495e;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-section-title,
+.porfolio-section-subtitle {
+  font-family: "Dancing Script", cursive;
+}
+
+.portfolio-nav-btn {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.portfolio-nav-btn:first-of-type {
+  left: 0;
+}
+
+.portfolio-nav-btn:last-of-type {
+  right: 0;
+}
+
+.divcarousel {
+  margin: auto;
+  height: 600px;
+  width: 1000px;
+}

@@ -1,15 +1,17 @@
 import React from "react";
 import { Container, Form, Button } from "react-bootstrap";
+import "./Contact.css";
 
 export const Contact = () => {
   return (
     <section id="contact" className="py-5 bg-dark">
       <Container>
         <div className="text-center py-5 text-white">
-          <h2 className="fw-bolder text-uppercase">Contact Me</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatem, doloribus?
+          <h2 className="fw-bolder text-uppercase contact-section-title">
+            Contact Me
+          </h2>
+          <p className="contact-section-subtitle">
+            Get in Touch for Collaborations or Inquiries
           </p>
         </div>
         <div className="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-6 mx-auto mb-5">

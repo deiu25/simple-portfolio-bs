@@ -1,0 +1,17 @@
+.blog-section-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.blog-section-subtitle {
+  font-size: 1.5rem;
+  color: #34495e;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.blog-section-title,
+.blog-section-subtitle {
+  font-family: "Dancing Script", cursive;
+}

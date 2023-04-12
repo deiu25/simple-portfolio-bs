@@ -1,15 +1,17 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import "./MyBlog.css";
 
 export const MyBlog = () => {
   return (
     <section id="blog" className="py-5">
       <Container>
         <div className="text-center py-5">
-          <h2 className="fw-bolder text-uppercase">My Blog</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatem, doloribus?
+          <h2 className="fw-bolder text-uppercase blog-section-title">
+            My Blog
+          </h2>
+          <p className="blog-section-subtitle">
+            Sharing Insights and Experiences in Web Development
           </p>
         </div>
         <Row className="pb-5">
