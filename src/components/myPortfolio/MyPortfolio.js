@@ -16,7 +16,21 @@ export const MyPortfolio = () => {
           </p>
         </div>
         <div className="d-flex justify-content-between align-items-center mb-4"></div>
-        <Carousel fade>
+        <Carousel
+          fade
+          prevIcon={
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+          }
+          nextIcon={
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+          }
+        >
           <Carousel.Item className="d-none d-md-block">
             <div className="divcarousel">
               <Row className="pb-1">
@@ -26,11 +40,13 @@ export const MyPortfolio = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img
-                      src={require("../../images/travel.jpg")}
-                      alt=""
-                      className="img-fluid img-thumbnail"
-                    />
+                    <div className="portfolio-img-container">
+                      <img
+                        src={require("../../images/travel.jpg")}
+                        alt=""
+                        className="img-fluid img-thumbnail portfolio-img"
+                      />
+                    </div>
                   </a>
                 </Col>
                 <Col xs={12} sm={12} md={6} lg={4} className="mb-4">
@@ -39,37 +55,55 @@ export const MyPortfolio = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img
-                      src={require("../../images/adviceslip.jpg")}
-                      alt=""
-                      className="img-fluid img-thumbnail"
-                    />
+                    <div className="portfolio-img-container">
+                      <img
+                        src={require("../../images/adviceslip.jpg")}
+                        alt=""
+                        className="img-fluid img-thumbnail portfolio-img"
+                      />
+                    </div>
                   </a>
                 </Col>
-                <Col xs={12} sm={12} md={6} lg={4} className="mb-4">
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className="mb-4 d-none d-xl-block"
+                >
                   <a
                     href="https://pic-search123.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img
-                      src={require("../../images/picsearch.jpg")}
-                      alt=""
-                      className="img-fluid img-thumbnail"
-                    />
+                    <div className="portfolio-img-container">
+                      <img
+                        src={require("../../images/picsearch.jpg")}
+                        alt=""
+                        className="img-fluid img-thumbnail portfolio-img"
+                      />
+                    </div>
                   </a>
                 </Col>
+              </Row>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item className="d-none d-md-block">
+            <div className="divcarousel">
+              <Row className="pb-1">
                 <Col xs={12} sm={12} md={6} lg={4} className="mb-4">
                   <a
                     href="https://aim-game-app.netlify.app/#"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img
-                      src={require("../../images/aimgame.jpg")}
-                      alt=""
-                      className="img-fluid img-thumbnail"
-                    />
+                    <div className="portfolio-img-container">
+                      <img
+                        src={require("../../images/aimgame.jpg")}
+                        alt=""
+                        className="img-fluid img-thumbnail portfolio-img"
+                      />
+                    </div>
                   </a>
                 </Col>
                 <Col xs={12} sm={12} md={6} lg={4} className="mb-4">
@@ -78,30 +112,40 @@ export const MyPortfolio = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img
-                      src={require("../../images/jokeapp.jpg")}
-                      alt=""
-                      className="img-fluid img-thumbnail"
-                    />
+                    <div className="portfolio-img-container">
+                      <img
+                        src={require("../../images/jokeapp.jpg")}
+                        alt=""
+                        className="img-fluid img-thumbnail portfolio-img"
+                      />
+                    </div>
                   </a>
                 </Col>
-                <Col xs={12} sm={12} md={6} lg={4} className="mb-4">
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className="mb-4 d-none d-xl-block"
+                >
                   <a
                     href="https://movie-api-app123.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img
-                      src={require("../../images/mouvieapp.jpg")}
-                      alt=""
-                      className="img-fluid img-thumbnail"
-                    />
+                    <div className="portfolio-img-container">
+                      <img
+                        src={require("../../images/mouvieapp.jpg")}
+                        alt=""
+                        className="img-fluid img-thumbnail portfolio-img"
+                      />
+                    </div>
                   </a>
                 </Col>
               </Row>
             </div>
           </Carousel.Item>
-          <Carousel.Item Item className="d-none d-md-block">
+          <Carousel.Item className="d-none d-md-block">
             <div className="divcarousel">
               <Row className="pb-1">
                 <Col xs={12} sm={12} md={6} lg={4} className="mb-4">
@@ -110,11 +154,28 @@ export const MyPortfolio = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img
-                      src={require("../../images/weather.jpg")}
-                      alt=""
-                      className="img-fluid img-thumbnail"
-                    />
+                    <div className="portfolio-img-container">
+                      <img
+                        src={require("../../images/weather.jpg")}
+                        alt=""
+                        className="img-fluid img-thumbnail portfolio-img"
+                      />
+                    </div>
+                  </a>
+                </Col>
+                <Col xs={12} sm={12} md={6} lg={4} className="mb-4">
+                  <a
+                    href="https://deiu-portfolio.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="portfolio-img-container">
+                      <img
+                        src={require("../../images/porfolio1.jpg")}
+                        alt=""
+                        className="img-fluid img-thumbnail portfolio-img"
+                      />
+                    </div>
                   </a>
                 </Col>
               </Row>
